@@ -1,0 +1,16 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block title %} Home
+{% endblock title %} {% block content %}
+
+
+{% comment %} {% for i in a %}
+  <h1>{{i.first_name}}</h1>
+  <h2>{{i.Age}}</h2>
+  <h3>{{i.gender}}</h3>  {% endfor %}{% endcomment %}
+<h1>{{a.first_name}}</h1>
+
+
+
+<img src="{% static 'images/laptop.jpg' %}" alt="" />
+{% endblock content %}
